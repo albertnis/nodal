@@ -1,0 +1,29 @@
+/*  Stylesheet for nodal environment
+    Author: Albert Nisbet */
+
+/* DEFAULT COLOURS (OVERRIDDEN BY THEME) */
+$bg_canvas: #272e53;
+$fg_canvas: #efefef;
+
+$col_task_complete: #058b00;
+$col_task_todo: #c17700;
+$col_task_issue: #be0016;
+
+$dim: 0.7;
+$conceal: 0.3;
+
+/* SPACING/SIZING */
+
+$space_desktop: 24px;
+$space_mobile: 16px;
+
+/* TEXT */
+$font-family-body: "Didact Gothic", Roboto, "San Francisco", Arial, sans-serif;
+
+/* COMPONENTS */
+@import
+    "reset.scss",
+    "app.scss",
+    "taskList.scss",
+    "task.scss"
+;

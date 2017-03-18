@@ -1,0 +1,33 @@
+{
+  "name": "nodal",
+  "version": "0.0.1",
+  "description": "Node-based graphical task manager",
+  "main": "./src/js/main.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot"
+  },
+  "keywords": [
+    "todo",
+    "task",
+    "graph",
+    "node",
+    "project"
+  ],
+  "author": "Albert Nisbet",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.26.4",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.13.2"
+  }
+}
