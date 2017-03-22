@@ -1,13 +1,17 @@
-import React from 'react';
+import React from 'react'
 
-class Task extends React.Component {
-    render() {
-        return (
-            <div>
-                A Task!
-            </div>
-        );
-    }
-};
+
+const Task = ({ onClick, onChange, done, text }) => (
+    <div>
+        <input type="checkbox" onChange={onClick} checked={done} />
+        <input className="task-text" type="text"
+            onChange={onChange}
+            style={{
+                textDecoration: done ? 'line-through' : 'none'
+            }}
+            value={text}
+        />
+    </div>
+)
 
 export default Task;
