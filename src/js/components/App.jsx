@@ -1,10 +1,10 @@
 import React from 'react'
 import connect from 'react-redux'
-import TaskListContainer from '../Containers/TaskListContainer.jsx'
+import ProjectContainer from '../Containers/ProjectContainer.jsx'
 
 const App = () => (
     <div>
-        <TaskListContainer />
+        <ProjectContainer />
     </div>
 )
 

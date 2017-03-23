@@ -1,4 +1,4 @@
-import { ADD_TODO, DELETE_TODO, EDIT_TODO, TOGGLE_TODO } from '../constants/actions'
+import { ADD_TODO, DELETE_TODO, EDIT_TODO, EDIT_TODO__AJAX, TOGGLE_TODO } from '../constants/actions'
 
 
 const task = (state = {}, action) => {
@@ -48,6 +48,10 @@ const tasks = (state = {}, action) => {
             return state.map(t =>
                 task(t, action)
             )
+
+        case EDIT_TODO__AJAX:
+            //TODO: implement AJAX
+            console.log('Sent imaginary AJAX update')
 
         default:
             return state

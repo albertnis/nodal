@@ -1,0 +1,22 @@
+.tasklist {
+    background: #67adff;
+    margin: 1rem;
+    width: 500px;
+    max-width: 100%;
+}
+
+.tasklist-list {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tasklist-title {
+    @include reset-input();
+    width: 100%;
+    background: rgba(54, 54, 54, 0.2);
+    color: #FFF;
+    font-size: 1.4rem;
+    padding: .6rem .4rem;
+}

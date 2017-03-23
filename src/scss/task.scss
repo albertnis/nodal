@@ -1,0 +1,19 @@
+.task {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .4rem .2rem;
+}
+
+.task-check {
+    flex: 0 0 auto;
+}
+
+.task-text {
+    @include reset-input();
+    flex: 1 1 auto;
+    padding: 0 .2rem;
+}
+

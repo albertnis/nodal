@@ -31,11 +31,19 @@ const initialState =
                 s_id: 0
             }
         ],
-        lists: [
+        tasklists: [
             {
                 text: "Code this",
                 l_id: 0
 
+            },
+            {
+                text: "Code that",
+                l_id: 1
+            },
+            {
+                text: "Another",
+                l_id: 2
             }
         ],
         tasks: [
@@ -67,7 +75,25 @@ const initialState =
                 text: "Bezier",
                 done: false,
                 t_id: 4,
-                l_id: 0
+                l_id: 1
+            },
+            {
+                text: "Routing",
+                done: false,
+                t_id: 5,
+                l_id: 2
+            },
+            {
+                text: "Header",
+                done: false,
+                t_id: 6,
+                l_id: 2
+            },
+            {
+                text: "Spaces",
+                done: false,
+                t_id: 7,
+                l_id: 2
             }
         ]
     }

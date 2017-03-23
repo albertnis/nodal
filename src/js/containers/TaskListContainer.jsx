@@ -2,9 +2,11 @@ import { connect } from 'react-redux'
 import { toggleTodo, editTodo } from '../actions'
 import TaskList from '../components/TaskList.jsx'
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, props) => {
+    console.log(props)
     return {
-        tasks: state.tasks
+        tasks: state.tasks.filter(task => task.l_id == props.l_id),
+        tasklist: props
     }
 }
 
@@ -15,6 +17,7 @@ const mapDispatchToProps = (dispatch) => {
         },
 
         onTaskChange: (t_id, text) => {
+            console.log(text)
             dispatch(editTodo(t_id, text))
         }
     }

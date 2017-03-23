@@ -20,10 +20,28 @@ $space_mobile: 16px;
 /* TEXT */
 $font-family-body: "Didact Gothic", Roboto, "San Francisco", Arial, sans-serif;
 
+/* MIXINS */
+@mixin reset-input() {
+    margin:0;
+    border:0;
+    padding: 0 .2rem;
+    display:inline-block;
+    vertical-align:middle;
+    white-space:normal;
+    background:none;
+    line-height:1;
+    font-family: inherit;
+    box-sizing: border-box;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
 /* COMPONENTS */
 @import
     "reset.scss",
     "app.scss",
-    "taskList.scss",
+    "tasklist.scss",
     "task.scss"
 ;
