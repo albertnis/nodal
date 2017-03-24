@@ -20,6 +20,7 @@ class TaskList extends React.Component {//= ({ tasks, tasklist, onTaskClick, onT
         var tasks = this.props.tasks
         return (
             <div className="tasklist">
+                <div className="tasklist-topbar"></div>
                 <input value={this.state.value} onChange={this.handleInputChange} className="tasklist-title" />
                 <ul className="tasklist-list">
                     {tasks.map(task =>

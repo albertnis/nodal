@@ -18,7 +18,8 @@ $space_desktop: 24px;
 $space_mobile: 16px;
 
 /* TEXT */
-$font-family-body: "Didact Gothic", Roboto, "San Francisco", Arial, sans-serif;
+$font-family-body: "PT Sans", Roboto, "San Francisco", Arial, sans-serif;
+$font-family-secondary: "Didact Gothic", Roboto, "San Francisco", Arial, sans-serif;
 
 /* MIXINS */
 @mixin reset-input() {
@@ -36,6 +37,11 @@ $font-family-body: "Didact Gothic", Roboto, "San Francisco", Arial, sans-serif;
     &:focus {
         outline: 0;
     }
+}
+
+/* BASE */
+html {
+    background: #555;
 }
 
 /* COMPONENTS */

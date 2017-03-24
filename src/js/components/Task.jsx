@@ -16,9 +16,15 @@ class Task extends React.Component {
 
     render() {
         var done = (this.props.done)
+        var domid = 'task-check-'+this.props.t_id;
         return (
             <div className="task">
-                <input className="task-check" type="checkbox" onChange={this.handleCheckboxChange} checked={done} />
+                <div className="task-check-container">
+                    <input placeholder="Create new task..." className="task-check" id={domid} type="checkbox" onChange={this.handleCheckboxChange} checked={done} />
+                    <label className="task-check-label" htmlFor={domid}><svg className="task-check-tick" viewBox="0 0 16 16">
+                        <polyline fill="none" stroke="#000000" strokeLinecap="square" strokeWidth="2" strokeMiterlimit="10" points="1.333,7.934 5.778,13.316 14.667,2.551 "/></svg>
+                        </label>
+                </div>
                 <input className="task-text" type="text"
                     onChange={this.handleInputChange}
                     style={{

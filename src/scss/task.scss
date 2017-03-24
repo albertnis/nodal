@@ -1,14 +1,60 @@
+$checkbox-size: 1rem;
+
 .task {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: .4rem .2rem;
+    padding: .4rem .4rem;
 }
 
-.task-check {
+.task-check-container {
     flex: 0 0 auto;
+    position: relative;
+    height: $checkbox-size;
+    width: $checkbox-size;
+    margin: 0 .4rem;
+}
+
+.task-check-label {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #555;
+    z-index: 2;
+    opacity: 1;
+    border-radius: 2px;
+    padding: 2px;
+    margin: 0;
+    line-height: 0;
+}
+
+.task-check-tick {
+    width: 100%;
+    margin: 0;
+    display: inline-block;
+    opacity: 0;
+}
+
+.task-check-tick polyline {
+    stroke: #555;
+}
+
+
+.task-check {
+    opacity: 0;
+    pointer-events: none;
+
+    &:checked + .task-check-label {
+
+    }
+
+    &:checked + .task-check-label .task-check-tick {
+        opacity: 1;
+    }
 }
 
 .task-text {
