@@ -37,6 +37,7 @@ $checkbox-size: 1rem;
     margin: 0;
     display: inline-block;
     opacity: 0;
+    transition: opacity .15s ease-out;
 }
 
 .task-check-tick polyline {
